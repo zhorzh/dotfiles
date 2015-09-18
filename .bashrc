@@ -127,3 +127,5 @@ export PAGER=less
 # prevents ctrl-s to freeze terminal
 bind -r '\C-s'
 stty -ixon
+
+export EDITOR=vim
