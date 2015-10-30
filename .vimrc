@@ -50,6 +50,8 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme molokai
 let g:rehash256 = 1
+let loaded_matchparen = 1
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline
@@ -108,6 +110,7 @@ set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
 set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line
 set number
+set hlsearch
 syntax on
 autocmd BufWritePost *.py call Flake8()
 
@@ -125,7 +128,9 @@ nmap <C-_> :Commentary<CR>
 vmap <C-_> :Commentary<CR> 
 map <C-x> <ESC>:x<CR>
 autocmd FileType apache set commentstring=#\ %s
-let g:user_emmet_leader_key=','
+
+let g:user_emmet_expandabbr_key=','
+
 nmap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
 
@@ -135,9 +140,9 @@ map <c-l> <C-w><Right>
 map <c-h> <C-w><Left>
 
 set hidden
-" nmap <s-t> :enew<cr>
+nmap <C-t> :enew<cr>
 nmap <tab> :bnext<CR>
 nmap <s-tab> :bprevious<CR>
-nmap <s-e> :bp <BAR> bd #<CR>
+nmap <c-e> :bp <BAR> bd #<CR>
 
 set guicursor=a:blinkon0 
