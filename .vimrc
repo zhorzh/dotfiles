@@ -9,8 +9,7 @@ set encoding=utf-8
 " Vundle plugin manager
 Bundle 'gmarik/vundle'
 " color scheme
-
-" Bundle 'tomasr/molokai'
+Bundle 'tomasr/molokai'
 " frontend
 Plugin 'mattn/emmet-vim'
 Plugin 'jelera/vim-javascript-syntax'
@@ -49,7 +48,7 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color scheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"colorscheme molokai
+colorscheme molokai
 let g:rehash256 = 1
 let loaded_matchparen = 1
 
