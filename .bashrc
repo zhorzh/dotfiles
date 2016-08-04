@@ -116,11 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-export WORK0N_HOME="$HOME/.virtualenvs"
-export PROJECT_HOME="$HOME/.virtualenvs"
-source /usr/local/bin/virtualenvwrapper.sh
-
 export TERM=screen-256color
 export PAGER=less
 
