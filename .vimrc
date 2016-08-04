@@ -10,7 +10,6 @@ set encoding=utf-8
 Bundle 'gmarik/vundle'
 " color scheme
 
-"TEMP"
 " Bundle 'tomasr/molokai'
 " frontend
 Plugin 'mattn/emmet-vim'
