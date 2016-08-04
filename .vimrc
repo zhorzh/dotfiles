@@ -20,7 +20,7 @@ Bundle 'nvie/vim-flake8'
 "Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
 " status line
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'edkolev/tmuxline.vim'
 " navigation
 Bundle 'majutsushi/tagbar'
