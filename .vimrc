@@ -48,7 +48,7 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color scheme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-colorscheme molokai
+"colorscheme molokai
 let g:rehash256 = 1
 let loaded_matchparen = 1
 
