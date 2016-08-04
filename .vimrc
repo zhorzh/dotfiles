@@ -9,7 +9,9 @@ set encoding=utf-8
 " Vundle plugin manager
 Bundle 'gmarik/vundle'
 " color scheme
-Bundle 'tomasr/molokai'
+
+"TEMP"
+" Bundle 'tomasr/molokai'
 " frontend
 Plugin 'mattn/emmet-vim'
 Plugin 'jelera/vim-javascript-syntax'
