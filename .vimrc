@@ -36,7 +36,7 @@ set hlsearch
 syntax on
 autocmd BufWritePost *.py call Flake8()
 
-let g:user_emmet_expandabbr_key=','
+let g:user_emmet_expandabbr_key='<Tab>'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
