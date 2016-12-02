@@ -34,12 +34,18 @@ set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line
 set number
 set hlsearch
+set paste
 syntax on
 autocmd BufWritePost *.py call Flake8()
 
-let g:user_emmet_expandabbr_key='<Tab>'
+let g:user_emmet_expandabbr_key='`'
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,css,jsx EmmetInstall
+let g:user_emmet_settings = {
+\  'javascript' : {
+\      'extends' : 'jsx',
+\  },
+\}
 
 set hidden
 set guicursor=a:blinkon0 
