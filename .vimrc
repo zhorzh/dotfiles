@@ -24,9 +24,9 @@ set timeoutlen=1000 ttimeoutlen=0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " programming language related settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd Filetype python setlocal shiftwidth=4 softtabstop=4 tabstop=4
-autocmd Filetype javascript setlocal shiftwidth=2 softtabstop=2 tabstop=2
-autocmd Filetype html setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd Filetype python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
+autocmd Filetype javascript setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
+autocmd Filetype html setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
 set textwidth=120  " lines longer than 79 columns will be broken
 set expandtab     " insert spaces when hitting TABs
@@ -38,7 +38,7 @@ set paste
 syntax on
 autocmd BufWritePost *.py call Flake8()
 
-let g:user_emmet_expandabbr_key='yy'
+let g:user_emmet_expandabbr_key='`'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,javascript EmmetInstall
 let g:user_emmet_settings = {
